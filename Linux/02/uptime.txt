@@ -1,0 +1,1 @@
+Shows in seconds how long the system has been on since it was last restarted.

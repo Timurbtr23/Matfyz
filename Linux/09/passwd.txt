@@ -1,0 +1,1 @@
+badretdt:*:32421487:32421487:Badretdinov Timur:/home/badretdt:/bin/bash
