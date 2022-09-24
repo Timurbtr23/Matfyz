@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "E+9E0i4GWvun6JavhCpS9Xlo57hipsCLdG7yQtE9c16GorCaMr+aoN42vQTi0xVZRvGPtYv+EnN57nao0LIs4Q==",
+  "success": true,
+  "projectFilePath": "/home/timurbtr23/Programming/C_Sharp/Programovani_2/Programovani_2.csproj",
+  "expectedPackageFiles": [
+    "/home/timurbtr23/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.2/microsoft.aspnetcore.app.ref.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.csproj.AssemblyReference.cache
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.AssemblyInfoInputs.cache
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.AssemblyInfo.cs
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.csproj.CoreCompileInputs.cache
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/bin/Debug/net6.0/Programovani_2
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/bin/Debug/net6.0/Programovani_2.deps.json
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/bin/Debug/net6.0/Programovani_2.runtimeconfig.json
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/bin/Debug/net6.0/Programovani_2.dll
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/bin/Debug/net6.0/ref/Programovani_2.dll
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/bin/Debug/net6.0/Programovani_2.pdb
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.dll
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/ref/Programovani_2.dll
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.pdb
+/home/timurbtr23/Programming/C_Sharp/Programovani_2/obj/Debug/net6.0/Programovani_2.genruntimeconfig.cache
