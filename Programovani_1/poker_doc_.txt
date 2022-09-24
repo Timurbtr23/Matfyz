@@ -1,0 +1,93 @@
+Introduction
+
+This program is a simulation of a Poker game. A rules of the game are here - https://bicyclecards.com/how-to-play/basics-of-poker/
+
+
+How to run?
+
+User can run program from a terminal by command "python3 poker.py" in the directory where the game is.
+Program will ask your name and how many bots do u want to play with.
+Then players will see how much money he has and which cards he has
+During first bet player can do "blind" bet.
+Then the mail part of the game will start and player will see the table with 3, then 4, then 5 cards.
+Ath the end of th game program will show who win. Player who have better combination take money from the table.
+
+
+How the program is arranged?
+
+The program has 5 classes: Card, Game, Player, User, Bot.
+Class Card implements structure of the cards.
+Class Game implements engine og the game. All main game's events are here.
+Class Player imolements players of the game.
+Class User from class Player implements User's events
+Class Bot from class Player implements Computer's events
+
+Driver Code starts the game, creates players and then starts endless while with the game events. It brakes when user has no money or wouldn't continue after some stage of a game
+
+
+The program has comments so here I won't repeat them
+Instead of that I will write down how some important functions works.
+
+
+Game.active_players
+
+The class Game has attribute players. It saves all players during all the game. I created list active_players to save here players at the present stage of the game. For example If user folded then we delete him but when the next stage will start user won't be in the game. Active players solve this problem. Actially we can say that active_player is subset of players
+
+
+Game.mix_cards_and_table()
+
+The main problem of the creating of that game was to find a way how to define a combinations. Players have 2 cards on the hand and 5 cards on the table. We need to define a combination.
+In my opinion best way to do that is merge game.table and player.cards to one list player.cards_n_table. Now we have all 7 cards and we can define a combinations. It'll be unique for each player.
+
+
+Sorting of player.cards_n_table
+
+One more thing is sorting the list. It'll be usefull to define some combinations as Highest card, Straight, Three of Kind and other
+Sorting method is insert sorting. It was an easy method to sort cards.
+
+
+Defining a combinations
+
+player.cards_n_table next will be named as "list"
+
+Scores of the combinations depends on the possible subcombinations. For example Pair could have 13 variations (from 2 to A). Each of the subcombination has more or less strength than other.
+
+Highest card - finding a card in the list with the highest number (strength)
+
+Pair - finding a pair in the list by for operation.
+
+Double Pair - same as Pair but when we find a pair we "deleted" it from the list and looking for a pair with other cards
+
+Three of Kind - same as Pair but we looking for 2 next same cards in the list
+
+Straight - looking for increasing sequense in the list with the length of 5
+Before the looking make list as set to exclude situations as 5,5,6,6,7,8,9 (here is no increasing sequense with different cards). Set does from sequence above sequence = 5,6,7,8,9 which is good for us
+
+Flush - making help arr with the suits of the cards in the list. Then count every suit in arr. If some suit is >=5 times in arr - we got flush
+
+Full House - finding Three of Kind, if found then "delete" them and looking for Pair
+
+Four of Kind - same as Three of Kind but with looking for 3 next same cards in the list
+
+Straight Flush - Flush algorythm + Straight algorythm. The help_arr contains 5 cards with the same suits. Then looking  for straight between them.
+
+Flush Royal - same as Straight Flush algorythm but the sum of cards in the help_arr must be 60 (10+J+Q+K+A = 10+11+12+13+14 = 60)
+
+
+Economics
+
+At the start of the Game all players has 1000$. Computers has no AI so they always make call bet.
+Game is over when User has no money.
+Game has no mode "competition" so no one can't win. It means that the goal of each player is exit from the game with more money than 1000$.
+
+
+After the stage game starts function reset_cards() which reset active_players, player.cards, player.status, player.cards_n_table, table, bank, deck_of_cards.
+
+
+Which feautures can be in the program in the future?
+1. AI for bots
+2. Graphic interface
+3. Multiplayeer
+
+
+Directed by Timur Badretdinov

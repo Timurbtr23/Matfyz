@@ -1,0 +1,15 @@
+root
+value
+successor
+
+Find value:
+    curr = root
+    while value != curr:
+        if value < curr
+            curr = curr.left
+        if value > curr
+            curr = curr.right
+
+When we found the value, its successor will be founded by next algorythm:
+go 1 time right
+and while exists ways to go left - go left. If no - return curr

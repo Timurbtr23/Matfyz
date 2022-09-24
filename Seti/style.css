@@ -1,0 +1,86 @@
+body {
+	 background-color: #1f3b8f;
+	}
+	p {
+	 color: #ffffff;
+	 font-family: Andale Mono, monospace;
+	 font-size: 100%;
+	}
+
+
+	ul.menu {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #3fcfd4;
+	}
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 15px 15px;
+	  text-decoration: none;
+	}
+	li a:hover:not(.active) {
+	  background-color: #268487;
+	}
+	.active {
+	  background-color: #268487;
+	}
+
+	.arct {
+	 color: #b81b1b;
+	 font-family: Andale Mono, monospace;
+	 font-size: 100%;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	ol > li {
+	color: #ffffff;
+	font-family: Andale Mono, monospace;
+	font-size: 100%;
+	}
+
+	thead{
+		background: #5d9ab0;
+		font-size: 14px;
+	}
+
+	tbody td {
+	  text-align: center;
+	}
+#comp{
+	color: #fff
+}
+	.tabul {
+	  font-family: Andale Mono, monospace;
+	  font-size: 14px;
+	  width: 920px;
+	  text-align: center;
+	  text-align: center;
+	  border-collapse: separate;
+	  background: #5d9ab0;
+	  margin: 70px;
+	}
+
+	.tabul th {
+	  color: #3a0000;
+	  padding: 12px 17px;
+	  letter-spacing: 2px;
+	  border: 1px solid #3a0000;
+	}
+	.tabul td {
+	  color: #3a0000;
+	  padding: 7px 17px;
+	  letter-spacing: 1px;
+	  border: 1px solid #000;
+	}
+
+	.tabul th, td {
+	  padding: 25px;
+	}
